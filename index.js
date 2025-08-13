@@ -99,7 +99,7 @@ function parseLine(line) {
 }
 
 // Load and parse the script
-const script = readFileSync("MyHousingLang/imports/script.mhl", "utf-8");
+const script = readFileSync("./imports/script.mhl", "utf-8");
 const lines = script.split("\n").map(parseLine).filter(Boolean).join("\n");
 
 // Run the translated code
